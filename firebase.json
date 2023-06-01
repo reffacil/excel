@@ -1,10 +1,15 @@
 {
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+  "hosting":
+  [
+    {
+      "target":"excel",
+      "public": "public/excel.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"crypto",
+      "public": "public/crypto.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    }
+  ]
 }

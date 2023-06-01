@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "excel-reffacil"
-  }
+  },
+  "targets": {
+    "excel-reffacil": {
+      "hosting": {
+        "excel": [
+          "excel-reffacil"
+        ],
+        "crypto": [
+          "crypto-reffacil"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
