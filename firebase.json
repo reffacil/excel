@@ -2,13 +2,68 @@
   "hosting":
   [
     {
-      "target":"excel",
-      "public": "public/excel.reffacil",
+      "target":"animalia",
+      "public": "public/animalia.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"auto",
+      "public": "public/auto.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"bar",
+      "public": "public/bar.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"chocolate",
+      "public": "public/chocolate.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"cinema",
+      "public": "public/cinema.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     },
     {
       "target":"crypto",
       "public": "public/crypto.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"excel",
+      "public": "public/excel.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"logistic",
+      "public": "public/logistic.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"menu",
+      "public": "public/menu.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"office",
+      "public": "public/office.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"radio",
+      "public": "public/animalia.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"seo",
+      "public": "public/seo.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
+      "target":"software",
+      "public": "public/software.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     }
   ]

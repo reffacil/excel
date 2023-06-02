@@ -10,6 +10,36 @@
         ],
         "crypto": [
           "crypto-reffacil"
+        ],
+        "animalia": [
+          "animalia-reffacil"
+        ],
+        "auto": [
+          "auto-reffacil"
+        ],
+        "bar": [
+          "bar-reffacil"
+        ],
+        "chocolate": [
+          "chocolate-reffacil"
+        ],
+        "cinema": [
+          "cinema-reffacil"
+        ],
+        "logistic": [
+          "logistic-reffacil"
+        ],
+        "menu": [
+          "menu-reffacil"
+        ],
+        "radio": [
+          "radio-reffacil"
+        ],
+        "seo": [
+          "seo-reffacil"
+        ],
+        "software": [
+          "software-reffacil"
         ]
       }
     }
