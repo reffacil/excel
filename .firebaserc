@@ -40,6 +40,9 @@
         ],
         "software": [
           "software-reffacil"
+        ],
+        "office": [
+          "office-reffacil"
         ]
       }
     }
