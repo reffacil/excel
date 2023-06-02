@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex">
+    <script>
+        // Detects the language of the browser and adds it to the session variable "lang" if it does not exist.
+        if(!sessionStorage.getItem('lang')){
+            sessionStorage.setItem('lang', window.navigator.language.substring(0,2))
+        };
+        // redirects the location to the language version handled by the user's browser.
+        window.location.href = sessionStorage.getItem('lang');
+    </script>
+</head>
+<body>
+    <!-- Without content -->
+</body>
+</html>

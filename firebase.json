@@ -7,6 +7,11 @@
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     },
     {
+      "target":"audible",
+      "public": "public/audible.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
       "target":"auto",
       "public": "public/auto.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
