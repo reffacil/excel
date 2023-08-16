@@ -57,6 +57,11 @@
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     },
     {
+      "target":"planner",
+      "public": "public/planner.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
       "target":"radio",
       "public": "public/animalia.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]

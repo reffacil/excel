@@ -1,0 +1,265 @@
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. variables
+02. tags
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+01. variables
+--------------------------------------------- 
+*/
+:root{
+    --excel-color: #1D6F42;
+    --text-shadow: 2px 2px 3px #222;
+    --box-shadow: 2px 2px 4px #222;
+    --texto-color: #333;
+    --texto-tamaño: 18px;
+    --texto-sombra: -1px 2px 3px #777;
+    --caja-sombra: -1px 2px 3px #999;
+    --caja-sombra-interior: inset 1px 1px 3px #999;
+}
+/* 
+---------------------------------------------
+02. tags
+--------------------------------------------- 
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+button{
+    border: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 65vw 1fr;
+}
+
+section{
+    
+}
+
+article{
+    padding: 2em;
+}
+
+h2{
+    margin: 0 auto;
+    color: #333;
+    font-size: 2em;
+}
+/* 
+---------------------------------------------
+03. global styles
+--------------------------------------------- 
+*/
+.flexbox{
+    display: flex;
+}
+
+.header{
+    width: 100%;
+    height: 75vh;
+    margin: 0;
+    padding: 2em 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button p{
+    color: #222;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.oneside{}
+.twoside{}
+.threeside{}
+.fourthside{}
+
+.social-media-container{
+    width: 15vw;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-media-container i{
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.reviews{
+    width: 16.2vw;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews input{
+    display: none;
+}
+.reviews label{
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.reviews input:in-range + label{
+    color: yellow;
+}
+
+
+.title{
+    color: white;
+    font-size: 56px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 3px #222;
+}
+
+.picaro{
+    color: yellow;
+    margin: 0;
+    font-size: 2em;
+    line-height: .5em;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 3px #222;
+}
+
+.summary{
+    color: white;
+    width: 45vw;
+    text-align: justify;
+    margin: 0;
+}
+
+.cards{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+    justify-content: space-between;
+}
+.card{
+    padding: 1em;
+    overflow: hidden;
+    flex-basis: 265px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: solid 1.2px #ccc;
+}
+
+/* 
+---------------------------------------------
+03. Indexes
+--------------------------------------------- 
+*/
+
+#indice{
+    position: sticky; /*No esta funcionando*/
+    padding-top: 1.5em;
+}
+#indice ul{
+    /* width: 250px; */
+    padding-left: 0;
+    /* background-color: aquamarine; */
+    list-style: none;
+
+}
+#indice ul li{
+    width: 250px;
+    height: 1.5em;
+    /* padding-left: 5px; */
+    line-height: 1.5em;
+
+    /* transform: translateY(50%); */
+    /* border-left: solid 4px transparent; */
+    transition: all .8s;
+    background-color: #222;
+}
+#indice ul li:hover{
+    /* border-left: solid 4px #999; */
+    background-color: #eee;
+}
+#indice ul li:has(ul):hover{
+    height: 350px;
+}
+#indice ul li a{
+    color: #333;
+    width: 100%;
+    display: inline-block;
+    font-size: .8em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: beige;
+}
+
+/* Estilo para dispositivos pequeños como celulares y algunas tablets */
+@media only screen and (max-width: 768px){
+    .header{
+        padding: 1em;
+        background-image: linear-gradient(70deg, rgba(0,0,0,.7), transparent), url("../img/fondo_header-small.png");
+    }
+    .title{
+        font-size: 48px;
+    }
+}
+
+/* Dispositivos de resolución media como tablets y algunas laptops*/
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .header{
+        background-image: linear-gradient(70deg, rgba(0,0,0,.7), transparent), url("../img/fondo_header-small.png");
+    }
+}
+
+/* Dispositivos de alta resolución como laptops, pantallas o PC's de escritorios*/
+@media only screen and (min-width: 1200px) {
+    .header{
+        background-image: linear-gradient(70deg, rgba(0,0,0,.7), transparent), url("../img/fondo_header.png");
+    }
+    .title{
+        font-size: 56px;
+    }
+}
