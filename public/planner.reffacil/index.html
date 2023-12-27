@@ -7,12 +7,45 @@
     <meta name="description" content="Editor de vistas">
     <meta name="keywords" content="HTML,CSS,JavaScript,PHP,MySQL">
     <meta name="author" content="reffacil.com">
-    <link rel="stylesheet" type="text/css" href="../../_src/css/default.css" media="screen">
-    <script src="../../_src/js/default.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_src/css/default.css" media="screen">
+    <script src="../_src/js/default.js"></script>
+    <script type="module" src="../_src/js/firebase.js"></script>
+    <script type="module" src="../_src/js/components.js"></script>
+    <script>
+        let webSQL_name = "planner.reffacil";
+        let webSQL_version = "1.0";
+        let webSQL_displayname = "Planner by reffacil"; 
+        let webSQL_size = "1024";
+        let webSQL;
+
+        let createWebSQL = (name, version, displayname, size) => {return window.openDatabase(name, version, displayname, size)}
+
+        function webSQL_createTable(tableName, tableField){
+            webSQL = createWebSQL(webSQL_name, webSQL_version, webSQL_displayname, webSQL_size);
+            webSQL.transaction(shell => {
+                shell.exeuteSql(`CREATE TABLE ${tableName} (${tableField})`)
+            })
+        }
+
+        function webSQL_insert(tableName, fieldName, fieldValue){
+            webSQL = createWebSQL(webSQL_name, webSQL_version, webSQL_displayname, webSQL_size);
+            webSQL.transaction(shell => {
+                shell.exeuteSql(`INSERT INTO ${tableName} (${fieldName}) VALUES (${fieldValue})`)
+            })
+        }
+    </script>
     <title>Planificador</title>
 </head>
 <body>
-    <h1>Estoy funcionando</h1>
+    <h1>Planner - Planificador</h1>
     <p>Organiza tus proyectos de una manera más facil e interactiva.</p>
+    <eureka-calendar></eureka-calendar>
+    <form action="">
+        <input type="text" placeholder="Introduce la actividad...">
+        <input type="date" placeholder="Fecha de Inicio...">
+        <input type="time">
+        <textarea placeholder="Descripción de la actividad..."></textarea>
+        <input type="button" value="Guardar">
+    </form>
 </body>
 </html>

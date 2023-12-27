@@ -87,18 +87,35 @@ function accordion(){
 
 class DotEnv{
     constructor(path){
-        const env = new Xhr({path:path}).result;
-        let element = env.split(/\r?\n/);
-        let arrayVar = new Array();
-        element.forEach(row => {
-            let str = row.split(/=/);
-            if(str[0]){
-                arrayVar[str[0].trim()] = str[1].trim();
-            }
+        return new Xhr(path).then(response => {
+            let split = response.split(/\r?\n/);
+            let env = new Array();
+            split.forEach(row => {
+                let str = row.split(/=/);
+                if(str[0]){
+                    env[str[0].trim()] = str[1].trim();
+                }
+            });
+            return env;
         });
-        return arrayVar;
     }
 }
+
+class Xhr{
+    constructor(path){
+        return new Promise((resolve, reject) => {
+            try{
+                this.xhr = new XMLHttpRequest();
+                this.xhr.onreadystatechange = function(){if(this.readyState === 4 && this.status === 200){resolve(this.response);}}
+                this.xhr.open("GET", path, true);
+                this.xhr.send();
+            }catch(error){
+                reject(error);
+            }
+        });
+    }
+}
+
 function htmlEscape(s){
     return s
       .replace(/&/g,'&amp;')
@@ -151,3 +168,31 @@ function tableOfContents(_){
         };
     }
 }
+
+class webComponents extends HTMLElement{
+    constructor(){
+        super();
+        this.attachShadow({mode:'open'});
+        this.template = document.importNode(this.templateComponent, true);
+    }
+
+    static define(tag){
+        window.customElements.define(tag, webComponents);
+    }
+
+    connectedCallback(){
+        this.shadowRoot.appendChild(this.template);
+    }
+
+    attributeChangedCallback(attr, oldVal, newVal){}
+
+    get templateComponent(){
+        let DOMtemplate = new DOMParser().parseFromString(new Xhr("components/menu.html").response,"text/html");
+        return DOMtemplate.getElementById("menu").content;
+    }
+}
+webComponents.define("x-prueba");
+
+document.addEventListener('DOMContentLoaded',function(){
+    // console.log("me cargue despues del el dom");
+});

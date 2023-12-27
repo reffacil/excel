@@ -49,6 +49,9 @@
         ],
         "planner": [
           "planner-reffacil"
+        ],
+        "cotizaciones": [
+          "cotizaciones-reffacil"
         ]
       }
     }

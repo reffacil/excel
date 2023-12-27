@@ -1,0 +1,97 @@
+{
+    "AdSense":{
+        "gadget":"AdSense",
+        "description":"Gana dinero mostrando anuncios relevantes en tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "Attribution":{
+        "gadget":"Atribución",
+        "description":"Muestra los datos de atribución de tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "BlogArchive":{
+        "gadget":"Archivo del blog",
+        "description":"Permite a los visitantes desplazarse fácilmente por tu blog con enlaces a entradas antiguas.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "BloggerButton":{
+        "gadget":"Logotipo",
+        "description":"Muestra lo orgulloso que estás de blog añadiendo el logotipo de Blogger a tu página."},
+    "BlogList":{
+        "gadget":"Lista de blogs",
+        "description":"Muestra lo que lees con una lista de enlaces recomendados de tus blogs favoritos."},
+    "BlogSearch":{
+        "gadget":"Busqueda en el blog",
+        "description":"Permite a los visitantes buscar en tu blog.",
+        "themes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "Blog":{
+        "comment":"Este gadget al parecer no esta disponible en la acción añadir gadget",
+        "gadget":"Entradas de blog",
+        "description":"Configura la cantidad y los atributos de las entradas que serán visibles en tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "FeaturedPost":{
+        "gadget":"Entrada destacada",
+        "description":"Destaca una entrada especial de tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "Feed":{
+        "gadget":"Feed",
+        "description":"Añade contenido a tu blog desde un feed RSS o Atom"},
+    "Followers":{
+        "gadget":"Seguidores",
+        "description":"Muestra la lista de los usuarios que siguen tu blog."},
+    "Header":{
+        "gadget":"Cabecera de página",
+        "description":"Muestra el título y la descripción de tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "HTML":{
+        "gadget":"HTML/JavaScript",
+        "description":"Añade funciones de terceros u otro código a tu blog."},
+    "Image":{
+        "gadget":"Imagen",
+        "description":"Añade una imagen desde tu ordenador o desde otro lugar de la web."},
+    "Label":{
+        "gadget":"Etiquetas",
+        "description":"Muestra todas las etiquetas de las entradas de tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "LinkList":{
+        "gadget":"Lista de enlaces",
+        "description":"Muestra a los visitantes un conjunto de tus blogs, páginas web o sitios favoritos."},
+    "Navbar":{
+        "gadget":"Barra de navegación",
+        "description":"La barra NavBar de Blogger es una barra de navegación y de herramientas con un cuadro de texto que permite buscar en tu blog con un clic.",
+        "inThemes":["Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "PageList":{
+        "gadget":"Páginas",
+        "description":"Muestra una lista con páginas independientes en tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "PopularPosts":{
+        "gadget":"Entrada populares",
+        "description":"Muestra lista con las entradas más populares de tu blog.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "Profile":{
+        "gadget":"Perfil",
+        "description":"Muestra información sobre ti a los visitantes",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "ReportAbuse":{
+        "gadget":"Notificar uso inadecuado",
+        "description":"Denuncia contenido inapropiado.",
+        "inThemes":["Contempo","Soho","Emporio","Notable","Essential","Simple","Dynamic Views","Picture Window","Awesome Inc.","Watermark","Ethereal","Travel"]},
+    "Stats":{
+        "gadget":"Estadísticas",
+        "description":"Muestra el número de vistas de página en tu blog."},
+    "Subscribe":{
+        "gadget":"Enlaces de suscripción",
+        "description":"Permite que tus lectores se suscriban fácilmente a tu blog mediante los lectores de feed más conocidos."},
+    "Text":{
+        "gadget":"Texto",
+        "description":"Añade un mensaje de texto a tu blog."},
+    "TextList":{
+        "gadget":"Lista",
+        "description":"Añade una lista con tus libros y películas favoritas o cualquier cosa que te guste."},
+    "Translate":{
+        "gadget":"Traductor",
+        "description":"Permite a los visitantes traducir tu blog a distintos idiomas."},
+    "ContactForm":{
+        "gadget":"Formulário de contacto",
+        "description":"Añade un formulário de contacto a tu blog."},
+    "Wikipedia":{
+        "gadget":"Wikipedia",
+        "description":"Con este gadget puede buscar artículos o texto completo en la wikipedia de una forma rápiada, cómoda y sencilla."}
+}

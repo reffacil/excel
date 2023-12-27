@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:lang='data:blog.locale' b:templateVersion='1.3.3'>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title><data:view.title.escaped/></title>
+    <b:include name='all-head-content' data='blog'/>
+    <b:include name='openGraphMetaData'/>
+
+    <b:skin version='1.3.3'>
+    <![CDATA[
+        /*
+         * Name      : Fancy Theme - Ultimate Blogger template
+         * Theme URL : https://reffacil.com/blogger/fancytheme
+         * Source    : https://github.com/reffacil/fancytheme
+         * Version   : 1.0.0
+         * Author    : reffacil (https://github.com/reffacil)
+         * License   : GPL (https://github.com/reffacil/fancytheme/blob/main/LICENSE)
+         * Copyright : 2023 reffacil. All right reserved
+         */
+
+        Admin
+        =====================
+        <Variable name="a.tools" description="Admin tools" type="string" value="true"/>
+        <Variable name="a.access" description="Accessibility mode" type="string" value="false"/>
+        <Variable name="a.edit" description="Shortcut edit post" type="string" value="false"/>
+        <Variable name="a.jumpLink" description="JumpLink alert" type="string" value="false"/>
+
+        Default
+        =====================
+        <Variable name="d.favicon" description="HD favicon" type="string" value=""/>
+        <Variable name="d.ogImage" description="og:imagen" type="string" value=""/>
+        <Variable name="d.image" description="Imagen" type="string" value=""/>
+        <Variable name="d.avatar" description="Avatar" type="string" value="https://lh3.googleusercontent.com/a/default-user=s50"/>
+        <Variable name="d.profileUrl" description="Author url" type="string" value="https://blogger.com"/>
+
+        General
+        =====================
+        <Variable name="g.scheme" description="Scheme by default" type="string" value="system"/>
+        <Variable name="g.toggleScheme" description="Show toggle scheme" type="string" value="true"/>
+        <Variable name="g.modalSearch" description="Enable modal search" type="string" value="true"/>
+        <Variable name="g.formspree" description="Form ID" type="string" value="YourID"/>
+
+        Personalizar
+        =====================
+        <Variable name="keycolor" description="keycolor" type="color" default="#2196f3" value="#2196f3"/>
+        <Variable name="body.background" description="Background" type="background" default="$(color) none repeat scroll top center" color="$(body.background.color)" value="$(color) none repeat scroll top center"/>
+        <Group description="Accents">
+          <Variable name="accent.primary" description="Action color" type="color" default="#10aeb9" value="#10aeb9"/>
+          <Variable name="accent.secondary" description="Alternate Color" type="color" default="#0a686f" value="#0a686f"/>
+        </Group>
+        <Group description="Font">
+          <Variable name="blog.logo.font" description="Blog Title Font" type="font" default="32px var(--font-primary)" value="32px var(--font-primary)"/>
+          <Variable name="blog.desc.font" description="Blog Description Font" type="font" default="14px var(--font-secondary)" value="14px var(--font-secondary)"/>
+          <Variable name="blog.nav.font" description="Page list font" type="font" default="15px var(--font-primary)" value="15px var(--font-primary)"/>
+          <Variable name="font.primary" description="Title Font" type="font" default="normal normal 10px var(--font-oswald)" value="normal normal 10px var(--font-oswald)"/>
+          <Variable name="body.text.font" description="Content font" type="font" default="normal normal 10px var(--font-roboto)" value="normal normal 10px var(--font-roboto)"/>
+        </Group>
+        <Group description="Widths">
+          <Variable name="width.container" description="Content width" type="length" default="1216px" min="900px" max="2000px" value="1216px"/>
+          <Variable name="width.sidebar" description="Sidebar width" type="length" default="340px" min="200px" max="500px" value="340px"/>
+          <Variable name="width.post" description="Post width (stream)" type="length" default="800px" min="600px" max="800px" value="800px"/>
+          <Variable name="height.breaking" description="Breaking news" type="length" default="46px" min="46px" max="100px" value="46px"/>
+          <Variable name="spacing.primary" description="Primary spacing" type="length" default="30px" min="0px" max="50px" value="30px"/>
+          <Variable name="spacing.secondary" description="Secondary spacing" type="length" default="2px" min="0px" max="50px" value="2px"/>
+          <Variable name="tg.blocks" description="Typography block space " type="length" default="24px" min="0px" max="50px" value="24px"/>
+          <Variable name="tg.headings" description="Typography headings space " type="length" default="24px" min="0px" max="50px" value="24px"/>
+          <Variable name="tg.inline" description="Typography inline space " type="length" default="8px" min="0px" max="50px" value="8px"/>
+        </Group>
+    ]]>
+    </b:skin>
+
+    <b:template-skin>
+    <![CDATA[...]]>
+    </b:template-skin>
+
+    <b:defaultmarkups>
+        <b:defaultmarkup type='Common'>
+            <b:includable id='openGraphMetaData'>
+            <b:comment render='false'>Metadata for Open Graph protocol. See http://ogp.me/.</b:comment>
+            <meta expr:content='data:blog.url.canonical' property='og:url'/>
+            <meta expr:content='data:view.title.escaped' property='og:title'/>
+            <meta expr:content='data:view.description.escaped' property='og:description'/>
+            <b:if cond='data:view.featuredImage'>
+                <meta expr:content='resizeImage(data:view.featuredImage, 1200, "1200:630")' property='og:image'/>
+            <b:elseif cond='data:widgets'/>
+            <b:loop values='data:widgets.Blog.first.posts where (p => p.featuredImage) map (p => p.featuredImage)' var='imageUrl'>
+                <meta expr:content='resizeImage(data:imageUrl, 1200, "1200:630")' property='og:image'/>
+            </b:loop>
+            <b:elseif cond='data:blog.postImageUrl'/>
+                <meta expr:content='resizeImage(data:blog.postImageUrl, 1200, "1200:630")' property='og:image'/>
+            </b:if>
+            </b:includable>
+        </b:defaultmarkup>
+    </b:defaultmarkups>
+</head>
+<body>
+    <b:class cond='data:view.isPreview' name='preview'/>
+    <b:class cond='data:view.isSingleItem' name='item-view'/>
+    <b:class cond='data:view.isArchive' name='archive-view'/>
+    <b:class cond='data:view.isLabelSearch' name='label-view'/>
+    <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
+    <b:class cond='data:view.archive.day'               type='number'  description='Day of the current archive page. e.g. 17.'/>
+    <b:class cond='data:view.archive.month'             type='number'  description='The month of the current archive page. e.g. 8'/>
+    <b:class cond='data:view.archive.year'              type='number'  description='Year of the current archive page. e.g. 1945'/>
+    <b:class cond='data:view.description'               type='string'  description='Description of the current pageview.'/>
+    <b:class cond='data:view.featuredImage'             type='image'   description='Featured image for the current page or post.'/>
+    <b:class cond='data:view.isArchive'                 type='boolean' description='Indicating Archive feed.'/>
+    <b:class cond='data:view.isError'                   type='boolean' description='The current view is 404 or error page.'/>
+    <b:class cond='data:view.isHomepage'                type='boolean' description='The current view is Homepage.'/>
+    <b:class cond='data:view.isLabelSearch'             type='boolean' description='The current view is the Label page.'/>
+    <b:class cond='data:view.isMultipleItems'           type='boolean' description='A page view is contained multiple posts, eg, Search, Label, Homepage, etc.'/>
+    <b:class cond='data:view.isMobile'                  type='boolean' description='A pageview has parameter m=1.'/>
+    <b:class cond='data:view.isPage'                    type='boolean' description='is Showing a Blog Static Page.'/>
+    <b:class cond='data:view.isPost'                    type='boolean' description='is Showing a Single Post.'/>
+    <b:class cond='data:view.isPreview'                 type='boolean' description='In preview mode.'/>
+    <b:class cond='data:view.isSearch'                  type='boolean' description='All page contain word "search" in the URL.'/>
+    <b:class cond='data:view.isSingleItem'              type='boolean' description='is a Single item, wether is the single post or static page.'/>
+    <b:class cond='data:view.pageId'                    type='number'  description='The id of the static page.'/>
+    <b:class cond='data:view.postId'                    type='number'  description='The id of the post.'/>
+    <b:class cond='data:view.search.label'              type='string'  description='Used for filtering label of the current view.'/>
+    <b:class cond='data:view.search.query'              type='string'  description='Used for filtering search keyword.'/>
+    <b:class cond='data:view.search.resultsMessage'     type='string'  description='The message about the search results being shown.'/>
+    <b:class cond='data:view.search.resultsMessageHtml' type='string'  description='A message about the result with HTML Link.'/>
+    <b:class cond='data:view.title'                     type='string'  description='Title of the current view.'/>
+    <b:class cond='data:view.url'                       type='url'     description='The URL of the current view.'/>
+    <b:class name='version-1-3-3'/>
+
+    <header>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

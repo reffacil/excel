@@ -37,6 +37,11 @@
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     },
     {
+      "target":"cotizaciones",
+      "public": "public/cotizaciones.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
       "target":"excel",
       "public": "public/excel.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]

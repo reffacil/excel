@@ -1,0 +1,151 @@
+:root {
+    --font-h2: yellow;
+    --text-color-title-tabs: #222;
+    --logo-css-color: #2565AE;
+    --logo-html-color: #E34C26;
+    --logo-javascript-color: #F0DB4F;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.post{
+    position: relative;
+    scroll-snap-type: y mandatory;
+}
+
+.post section{
+    position: relative;
+    scroll-snap-align: start;
+}
+
+article section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-post{
+    width: 35vw;
+    top: 0; right: 0;
+    position: absolute;
+    border-radius: 0px 0px 0px 20px;
+    border-left: 10px solid linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.post{
+    font-size: 18px;
+    background-image: 
+    linear-gradient(to right, white 1%, transparent 50%),
+    linear-gradient(to top, white 1%, transparent 50%),
+        url(img/masa-ingredientes.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 35vw 50vh;
+}
+
+h2{
+    color: white;
+    font-size: 36px;
+    background-color: brown;
+}
+
+.review{
+    width: 100%;
+    height: fit-content;
+}
+
+.card{}
+
+.card img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+}
+.card p{
+    width: 25vw;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    position: absolute;
+    left: 1em; bottom: 1em;
+}
+
+/*******************************
+ *       ASSETS WEB            *
+ *******************************
+ */
+
+.assetsweb.container-navigation-by-tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-navigation-by-tabs .tabs-title{ /* UL */
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:start;
+}
+
+.container-navigation-by-tabs .tabs-title li{
+    display: inline-block;
+    padding: 1em 0em;
+}
+
+.container-navigation-by-tabs .tabs-title a{
+    color: var(--text-color-title-tabs);
+    padding: 1em;
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: -1px 1px 2px #999;
+    border-top: 2px solid transparent;
+    transition: border-top .5s;
+}
+
+.tabs-title li a.active{
+    border-top: 2px solid var(--logo-html-color);
+}
+
+.tabs-pannel{
+    background-color: brown;
+}
+
+.tabs-pannel pre{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-pannel code{
+    height: 50vh;
+    font-size: 14px;
+    display: ruby-text;
+}
+
+.tabs-pannel div{
+    display: none;
+    position: relative;
+}
+
+.tabs-pannel div.active{
+    display: block;
+}
+
+.tabs-pannel div button{
+    content: "<i class='fa-solid fa-copy'></i>";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px; right: 5px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

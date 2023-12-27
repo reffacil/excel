@@ -1,0 +1,5 @@
+{
+    "cond":"The attribute cond is an expression attribute who's found in certain Blogger tags. The attribute is designed to define an execution condition true or false.",
+    "data":"data is an attribute to define dataset to be forwarded to the child node. The value of this attribute can be expression or an object.",
+    "expr":"expr: attribute is an prefix given to HTML Tag Attribute, by giving the attribute this will allowing the HTML Tag used an Blogger Expression."
+}
