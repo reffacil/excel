@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.logo{
+    width: 250px;
+    height: 200px;
+}
+
+.cabezal{
+    display: flex;
+    justify-content: space-between ;
+}

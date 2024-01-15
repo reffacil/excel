@@ -52,6 +52,9 @@
         ],
         "cotizaciones": [
           "cotizaciones-reffacil"
+        ],
+        "tutorial": [
+          "tutorial-reffacil"
         ]
       }
     }
