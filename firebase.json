@@ -17,6 +17,11 @@
       "ignore":["firebase.json","**/.*","**/node_modules/**"]
     },
     {
+      "target":"prompt",
+      "public": "public/prompt.reffacil",
+      "ignore":["firebase.json","**/.*","**/node_modules/**"]
+    },
+    {
       "target":"seo",
       "public": "public/seo.reffacil",
       "ignore":["firebase.json","**/.*","**/node_modules/**"]

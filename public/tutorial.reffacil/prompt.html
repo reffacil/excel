@@ -1,0 +1,263 @@
+<!--
+    Crea un curso escrito en html sobre [TEMÁTICA] que contenga las siguientes secciones:
+    1.Una presentación con un titulo atractivo y la palabra de la temática dentro de un h1, una breve descripción del curso y su importancia, un espacio para colocar una imagen o video de presentación y un botón de llamada a la acción.
+    2.contenedor de los diferentes temas a tratar en el curso en formato de tarjetas organizadas en bloques de 3 columnas.
+    3.comparativa, entre el curso de la temática y otros disponibles en el mercado (Dame el formato que consideres mas apropiado teniendo en cuenta la temática).
+    4.Descripción breve del contenido, muestra una lista de los títulos de los diferentes temas a tratar en el curso.
+    5.contenido, crea un bloque de dos columnas donde se deje un espacio para colocar un video de los diferentes temas del curso  al lado una breve descripción del mismo.
+    6.preguntas frecuentes, incluye un formato de preguntas frecuentes con su respectiva respuesta.
+    
+    Nota: Para la sección en la cual sea posible, intenta ser detallado, asegúrate de proporcionar instrucciones, consejos prácticos  ejemplos claros para que los lectores comprendan el proceso, incluye imágenes ilustrativas o diagramas cuando sea necesario para mejorar la comprensión.
+    Proporciona soluciones a posibles problemas y sugiere herramientas o recursos adicionales que puedan ser útiles. Asegúrate de que el contenido sea relevante y actualizado. Intenta no inventar nada sino que mostrar información proporcionada en base a experiencias.
+    El tono del artículo debe ser amigable y accesible, orientado a ayudar a los lectores a dominar la temática.
+    Recuerda mantener una estructura clara, con una introducción que destaque la importancia del tema, un cuerpo que cubra los pasos detallados y una conclusión que resuma los puntos clave y motive a los lectores a poner en práctica lo aprendido.
+    Que la lectura incentive la retención del lector y de ser posible que se sienta motivado a leer o estudiar el curso hasta el final de la pagina.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Adobe Photoshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .topics-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .topic-card {
+            flex: 0 1 calc(33.33% - 20px);
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .content-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .content-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-section {
+            margin-top: 30px;
+        }
+
+        .testimonial {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .content-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-section {
+            margin-top: 30px;
+        }
+
+        .testimonial {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .cta-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Curso de Adobe Photoshop</h1>
+        <p>Domina las habilidades esenciales para la edición de imágenes</p>
+        <img src="tu-imagen-de-presentacion.jpg" alt="Imagen de presentación">
+        <a href="#cta" class="cta-button">¡Comienza ahora!</a>
+    </header>
+
+    <section>
+        <h2>Temas del Curso</h2>
+        <div class="topics-container">
+            <div class="topic-card">Introducción a Photoshop</div>
+            <div class="topic-card">Herramientas y Paneles</div>
+            <div class="topic-card">Capas y Máscaras</div>
+            <!-- Agrega más tarjetas según los temas del curso -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Comparativa</h2>
+        <!-- Agrega aquí la comparativa entre tu curso y otros disponibles en el mercado -->
+    </section>
+
+    <section>
+        <h2>Contenido del Curso</h2>
+        <ul>
+            <li>Introducción a Adobe Photoshop</li>
+            <li>Conociendo las herramientas básicas</li>
+            <li>Trabajando con capas y máscaras</li>
+            <!-- Agrega más elementos según los temas del curso -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contenido Detallado</h2>
+        <div class="content-section">
+            <div>
+                <h3>Introducción a Adobe Photoshop</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_video1" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>En este video, aprenderás los conceptos básicos y la interfaz de usuario de Photoshop.</p>
+            </div>
+            <!-- Repite este bloque para cada tema del curso -->
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Necesito experiencia previa en diseño?</h3>
+            <p>No, este curso está diseñado para principiantes. Aprenderás desde cero.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Qué versión de Photoshop se utiliza en el curso?</h3>
+            <p>Usamos la versión más reciente de Adobe Photoshop, pero la mayoría de los conceptos son aplicables a
+                versiones anteriores.</p>
+        </div>
+        <!-- Agrega más preguntas frecuentes según sea necesario -->
+    </section>
+
+    <section id="cta">
+        <h2>¡Comienza Tu Viaje en Adobe Photoshop Ahora!</h2>
+        <p>Transforma tus habilidades de edición de imágenes con nuestro curso detallado y práctico.</p>
+        <a href="#formulario-inscripcion" class="cta-button">Inscríbete Ahora</a>
+    </section>
+
+    <section class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Necesito experiencia previa en diseño?</h3>
+            <p>No, este curso está diseñado para principiantes. Aprenderás desde cero.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Qué versión de Photoshop se utiliza en el curso?</h3>
+            <p>Usamos la versión más reciente de Adobe Photoshop, pero la mayoría de los conceptos son aplicables a
+                versiones anteriores.</p>
+        </div>
+        <!-- Agrega más preguntas frecuentes según sea necesario -->
+    </section>
+
+    <section class="testimonial-section">
+        <h2>Testimonios de Estudiantes</h2>
+        <div class="testimonial">
+            <p>"Este curso ha transformado mi habilidad para editar imágenes. Los conceptos se explican de manera clara,
+                y los ejemplos prácticos hacen que sea fácil de entender. ¡Muy recomendado!"</p>
+            <p>- María Rodríguez</p>
+        </div>
+        <div class="testimonial">
+            <p>"Como fotógrafo principiante, este curso me ha dado las habilidades necesarias para mejorar mis fotos. La
+                sección de capas y máscaras fue especialmente útil. Gracias por este increíble recurso."</p>
+            <p>- Juan Pérez</p>
+        </div>
+        <!-- Agrega más testimonios según sea necesario -->
+    </section>
+
+    <!-- Sección de Inscripción o Información Adicional -->
+    <section class="testimonial-section">
+        <h2>Testimonios de Estudiantes</h2>
+        <div class="testimonial">
+            <p>"Este curso ha transformado mi habilidad para editar imágenes. Los conceptos se explican de manera clara,
+                y los ejemplos prácticos hacen que sea fácil de entender. ¡Muy recomendado!"</p>
+            <p>- María Rodríguez</p>
+        </div>
+        <div class="testimonial">
+            <p>"Como fotógrafo principiante, este curso me ha dado las habilidades necesarias para mejorar mis fotos. La
+                sección de capas y máscaras fue especialmente útil. Gracias por este increíble recurso."</p>
+            <p>- Juan Pérez</p>
+        </div>
+        <!-- Agrega más testimonios según sea necesario -->
+    </section>
+
+    <section class="cta-section">
+        <h2>¡Transforma tus Habilidades de Edición con Nuestro Curso!</h2>
+        <p>Descubre los secretos de Adobe Photoshop y lleva tus habilidades al siguiente nivel. ¡Inscríbete ahora y
+            comienza tu viaje!</p>
+        <a href="#formulario-inscripcion" class="cta-button">Inscríbete Ahora</a>
+    </section>
+</body>
+
+</html>

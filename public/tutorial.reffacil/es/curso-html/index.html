@@ -1,81 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Curso HTML</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Curso de HTML">
+    <meta name="keywords" content="HTML, etiqueta, atributo, elemento">
+    <meta name="author" content="reffacil.com">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" media="screen">
+
+    <!-- Enable Highlight -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/classic-dark.min.css' rel='stylesheet'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js'></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="../../assets/js/default.js"></script>
+
+    <script defer>
+        hljs.highlightAll();
+
+        document.addEventListener('DOMContentLoaded',function(){
+            indice();
+            accordion();
+        });
+    </script>
 </head>
 <body>
-    <h1>Curso HTML</h1>
-    <section>
-        <h2>Índice</h2>
-        <ul>
-            <li>Introducción</li>
-            <li>Que es html?</li>
-            <li>Requisitos</li>
-            <li>Creando carpeta + extensión</li>
-            <li>De que se encarga y no HTML?</li>
-            <li>Primer Archivo HTML</li>
-            <li>Qué son las etiquetas?</li>
-            <li>semantica</li>
-            <li>Como usar la extensión</li>
-            <li>Heading (h1-h6)</li>
-            <li>parrafos</li>
-            <li>Elementos Anidados (strong)</li>
-            <li>Lista desordenada</li>
-            <li>Mala practica</li>
-            <li>Elementos de remplazo (img, input, br…)</li>
-            <li>Atributos</li>
-            <li>Detalle importante de los atributos</li>
-            <li>Atributos booleanos</li>
-            <li>No usar mayúsculas</li>
-            <li>Atributo ID</li>
-            <li>atributo class</li>
-            <li>MDN</li>
-            <li>Etiqueta Center</li>
-            <li>Etiqueta Em</li>
-            <li>Estilos por defecto</li>
-            <li>Estructura Básica</li>
-            <li>Para que sirve el Head y el Body?</li>
-            <li>Metadato UTF-8</li>
-            <li>Metadato ViewPort</li>
-            <li>Etiqueta Title</li>
-            <li>Metadato Robots y Theme Color</li>
-            <li>Favicon</li>
-            <li>Etiquetas para el SEO</li>
-            <li>Etiqueta Style</li>
-            <li>HTML Semántico</li>
-            <li>Ejemplo de HTML Semántico</li>
-            <li>Etiqueta Article</li>
-            <li>Etiqueta small</li>
-            <li>Continuando semántica</li>
-            <li>Etiqueta aside</li>
-            <li>Porque tantos headers, que es section, aside, article</li>
-            <li>Etiqueta Main y anchor</li>
-            <li>atributo rel="noreferer"</li>
-            <li>Div y span</li>
-            <li>atributo Role</li>
-            <li>Enlaces especiales</li>
-            <li>Atributos de Listas (ol, ul)</li>
-            <li>Etiquetas de formulario</li>
-            <li>Fieldset, label, input</li>
-            <li>Elementos en línea y de Bloque</li>
-            <li>Continuando con el formulario</li>
-            <li>Validaciones de formularios</li>
-            <li>Datalist</li>
-            <li>Etiqueta details</li>
-            <li>input submit vs button submit</li>
-            <li>Etiqueta de Video</li>
-            <li>Etiqueta Audio</li>
-            <li>Atributo loading lazy</li>
-            <li>iframes</li>
-            <li>Etiqueta dialog (para modales)</li>
-            <li>Despedida</li>
-        </ul>
+    <header class="header">
+        <div>
+            <span>&#128522;</span>
+            <span>&#128260;</span>
+            <span>&#128077;</span>
+        </div>
+        <nav>
+            <a href="/">Inicio</a>
+        </nav>
+        <div>
+            <a href="#signin">Registrárme</a>
+            <a href="#login">Iniciar sesión</a>
+            <a href="#logout">Cerrar sesión</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Curso HTML</h1>
+            <section>
+                <h2>Índice</h2>
+                <ul>
+                    <li>Introducción
+                        <ul>
+                            <li>Que es html?</li>
+                            <li>Requisitos</li>
+                        </ul>
+                    </li>
+                    
+                    <div id="indice"></div>
+                    <li>Creando carpeta + extensión</li>
+                    <li>De que se encarga y no HTML?</li>
+                    <li>Primer Archivo HTML</li>
+                    <li>Qué son las etiquetas?</li>
+                    <li>semantica</li>
+                    <li>Como usar la extensión</li>
+                    <li>Heading (h1-h6)</li>
+                    <li>parrafos</li>
+                    <li>Elementos Anidados (strong)</li>
+                    <li>Lista desordenada</li>
+                    <li>Mala practica</li>
+                    <li>Elementos de remplazo (img, input, br…)</li>
+                    <li>Atributos</li>
+                    <li>Detalle importante de los atributos</li>
+                    <li>Atributos booleanos</li>
+                    <li>No usar mayúsculas</li>
+                    <li>Atributo ID</li>
+                    <li>atributo class</li>
+                    <li>MDN</li>
+                    <li>Etiqueta Center</li>
+                    <li>Etiqueta Em</li>
+                    <li>Estilos por defecto</li>
+                    <li>Estructura Básica</li>
+                    <li>Para que sirve el Head y el Body?</li>
+                    <li>Metadato UTF-8</li>
+                    <li>Metadato ViewPort</li>
+                    <li>Etiqueta Title</li>
+                    <li>Metadato Robots y Theme Color</li>
+                    <li>Favicon</li>
+                    <li>Etiquetas para el SEO</li>
+                    <li>Etiqueta Style</li>
+                    <li>HTML Semántico</li>
+                    <li>Ejemplo de HTML Semántico</li>
+                    <li>Etiqueta Article</li>
+                    <li>Etiqueta small</li>
+                    <li>Continuando semántica</li>
+                    <li>Etiqueta aside</li>
+                    <li>Porque tantos headers, que es section, aside, article</li>
+                    <li>Etiqueta Main y anchor</li>
+                    <li>atributo rel="noreferer"</li>
+                    <li>Div y span</li>
+                    <li>atributo Role</li>
+                    <li>Enlaces especiales</li>
+                    <li>Atributos de Listas (ol, ul)</li>
+                    <li>Etiquetas de formulario</li>
+                    <li>Fieldset, label, input</li>
+                    <li>Elementos en línea y de Bloque</li>
+                    <li>Continuando con el formulario</li>
+                    <li>Validaciones de formularios</li>
+                    <li>Datalist</li>
+                    <li>Etiqueta details</li>
+                    <li>input submit vs button submit</li>
+                    <li>Etiqueta de Video</li>
+                    <li>Etiqueta Audio</li>
+                    <li>Atributo loading lazy</li>
+                    <li>iframes</li>
+                    <li>Etiqueta dialog (para modales)</li>
+                    <li>Despedida</li>
+                </ul>
+            </section>
+        </article>
+        <img class="logo" src="../../assets/img/html.svg" alt="Logo de HTML">
+        
 
-    </section>
-    <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GnPALhDSleI?si=NgM-qNsJHHkKbh8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
+        <h2>Introducción al desarrollo web</h2>
+        <h3>Editores de código</h3>
+
+        <h2>Carácteristicas de una página web</h2>
+        <h2>Meta etiquetas HTML</h2>
+        <h2>Etiquetas HTML</h2>
+        <h2>Atributos HTML</h2>
+        <h2>Componentes Web</h2>
+        <section>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GnPALhDSleI?si=NgM-qNsJHHkKbh8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        </section>
+        <article>
+            
+            <section>
+                <h1>Introducción</h1>
+                <p>HTML es uno de los primeros lenguajes que se deben conocer para introducirse en el maravilloso mundo del desarrollo web. Puede decirse hoy, con toda seguridad, que la web es una tecnología que ha permitido que la información llegue a casi todas las personas del mundo.</p>
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Crear a través del tiempo una base de información sobre HTML que albergue sus principales cracterísticas y casos de uso.</li>
+                    <li>Conocer y dominar HTML. Aprender en que momento utilizar una u otra, las características de HTML.</li>
+                </ul>
+                <div class="accordion">
+                    <h2>¿Para quienes es HTML?</h2>
+                    <p>El lenguaje HTML es fácil de aprender y puede ser dominado por una amplia gama de profesionales, puesto que su objetivo principal es el de presentar la información de la forma más estructurada y ordenada posible. Es debido a esto que el contenido sobre HTML presentado aquí pretende alcanzar a:</p>
+                    <ul>
+                        <li>Profesionales del marketing digital, que deseen mejorar o editar la presentación de sus campañas digitales.</li>
+                        <li>Creadores de contenido SEO, por sus siglas en inglés, Search Engine Optimization (Optimización en motores de busqueda) que desean presentar la información cumpliendo con los estándares o mejores prácticas de presentación de contenido para motores de busqueda y asi tener más relevancia en los resultados.</li>
+                        <li>Profesionales de la educación que deseen crear un curso HTML o material de estudio sobre HTML para reforzar conocimientos.</li>
+                        <li>Personas que deseen convertirse en desarrolladores de paginas web o aplicaciones web, es decir que desean volcar su creatividad escribiendo su propio código.</li>
+                        <li>Profesionales en general que desean ampliar su alcanze al presentar sus habilidades a través de la web.</li>
+                    </ul>
+                    <h2>¿Para qué sirve HTML?</h2>
+                    <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar una página web y sirve para desplegar la página web y sus contenidos. HTML es el lenguaje que se utiliza para el desarrollo de páginas de internet. Está compuesto por una seríe de bloques de código conocidos como etiquetas que el navegador interpreta y da formato en pantalla. HTML dispone de diferentes etiquetas para los elementos que se desean introducir a las páginas web.</p>
+                    <h2>Breve historia de la web</h2>
+                    <p>Antes de empezar en el desarrollo web ayuda conocer algunas diferencias básicas sobre lo que es internet y sobre lo que es la web. Internet y la web son dos tenologías difrentes entre si a pesar de trabajar juntas.</p>
+                    <ul>
+                        <li>Internet es un conjunto desentralizado de redes de comunicación de diferentes tipos que pueden ser o estar interconectadas entre si, internet permite que estas redes físicas heterogéneas, a través de diferentes protocolos de comunicación, puedan intercambiar datos. Es correcto cuando se piensa en internet imaginar su infraestructura (Antenas, routers, cables submarinos, computadores, dispositivos móviles, satélites, etc...). Un protocolo de comunicación que más se ha popularizado entre los usuarios de internet es el http o https, uno de los más utilizados por la web.</li>
+                        <li>Mientras que la web forma parte de internet, siendo una forma de consulta remota de archivos de hipertexto.</li>
+                    </ul>
+                    <p>El primer servidor web se activo el 20 de diciembe de 1990. Tim Berners Lee, es considerado el padre de la web ya que desarrollo:</p>
+                    <ul>
+                        <li>HTML, siglas en inglés de <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage (Lenguaje de marcas de hipertexto).</li>
+                        <li>HTTP, siglas en inglés de <b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol (Protocolo de transferencia de hipertexto).</li>
+                        <li>URL, siglas en inglés de <b>U</b>niform <b>R</b>esource <b>L</b>ocator (Localizador de recursos uniforme).</li>
+                    </ul>
+                    <h2>¿Cuáles son los requerimientos para crear una pagina web?</h2>
+                    <p>Para crear una pagina web solo se necesita</p>
+                    <ul>
+                        <li><strong>Un editor de texto:</strong> Para escribir el código HTML. Y guardar lo escrito bajo la extensión <mark class="text">.html</mark></li>
+                        <li><strong>Un navegador web:</strong> Como podria ser chrome, firefox o safari para interpretar el código HTML. Deberá abrir la pagina con el navegador web.</li>
+                    </ul>
+                    <p>Pero si desea que el acceso a la página web sea público deberá implementar unos pocos requerimientos más.</p>
+                    <ul>
+                        <li><mark class="text"><strong>index.html</strong></mark>: Para abrir la página en un computador local no es necesario crear la página index.html, pero si se desea desplegar en un servidor web entonces si es necesaria. A través del servidor se puede configurar que la página de inicio no sea index.html pero no es lo habitual.</li>
+                        <li><strong>Un servidor web:</strong> Donde podrá alojar su sitio. y que el acceso sea público.</li>
+                        <li><strong>Un nombre de dominio:</strong> que posee el formato <mark class="text">https://wwww.mi_nombre_de_dominio.com</mark> y lo diferencia del resto de otras páginas web creadas de acceso público.</li>
+                    </ul>
+                    <h2>¿Qué es una página web?</h2>
+                    <p>Las paginas web son documentos a los que se puede acceder a través de un enlace que en la mayoría de los casos posee el formato: <mark class="text">https://www.nombre_de_dominio.com</mark>; donde <i>https</i> hace referencia al protocolo de acceso aunque no se limita unicamente a este, <i>nombre_de_dominio</i> es el nombre que escojió el usuario como nombre de su presencia en la web y la extensión <i>.com</i> viene a ser el nivel(alcanze) del dominio, siendo este el más común de entre muchas extensiones. Algo esencial de la web son los enlaces o hipervínculos.</p>
+                    <h2>¿Qué son los enlaces o hipervínculos?</h2>
+                    <p>Los enlaces o hipervículos se definen mediante una URL. Los enlaces en una pagina web pueden ser externos o internos. Los enlaces internos por lo general poseen el formato <mark class="text">file:///Usuario/Documentos/mipagina.html</mark>. Mientras que los enlaces externos poseen el formato que incluye al inicio un protocolo de acceso a internet como lo puede ser, por ejemplo, http, https o ws.</p>
+                </div>
+            </section>
+            <section>
+                <h1>Qué es HTML</h1>
+                <p>HTML son las siglas de (<b>H</b>yper <b>T</b>ext <b>M</b>ark <b>L</b>anguage) ó lenguaje de marcado de hipertexto, es una de las principales tecnologías para la construcción de un sitio o una aplicación web. Con HTML es posible definir la estructura de una página web.</p>
+                <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
+                
+                <h2>¿Qué son entidades de carácter?</h2>
+    
+                <p>Las entidades de carácter son referencias a un carácter y se representa con la sintaxis <mark class="code">&amp;nombre;</mark>. Para mostrar el código html como texto utilizaremos éstas dos entidades de carácter:</p>
+                <p>Una entidad HTML es un conjunto de caracteres ("string") que comienza con un ampersand ( & ) y termina con un punto y coma (;) . Las entidades son utilizadas frecuentemente para imprimir en pantalla caracteres reservados (aquellos que serían interpretados como HTML por el navegador) o invisibles (cómo tabulaciones).</p>
+                <h2>Sintáxis HTML</h2>
+    <pre>
+        <code class="language-html">
+        &lt;!-- Formato --&gt;
+        &lt;nombreEtiqueta&gt; Bloque de Contenido... &lt;/nombreEtiqueta&gt;
+    
+        &lt;!-- Ejemplo --&gt;
+        &lt;p&gt;Esto es un párrafo...&lt;/p&gt;
+        </code>
+    </pre>
+    <pre>
+        <code class="language-html">
+        &lt;!-- Formato de comentario HTML --&gt;
+        &lt;!Doctype html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;!-- Cabecera de la página web --&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- Contenido de la página web --&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+        </code>
+    </pre>
+            </section>
+            <section>
+                <h1>Etiquetas HTML</h1>
+                <p>Las etiquetas HTML son pequeños bloques de código, que indican al navegador como debe interpretar el contenido recogido entre dichas etiquetas. Por ejemplo, si queremos «pintar» un párrafo de texto, hay una etiqueta especifica para que el navegador interprete ese texto como un párrafo.</p>
+                <p>Estas etiquetas cuentan además con atributos que podemos añadir y que en sí, pueden determinar como será el comportamiento específico que tendrá la etiqueta. Te dejo por aquí un listado de atributos HTML para complementar esta entrada.</p>
+                <p>Las etiquetas HTML comienzan siempre con el símbolo «<» y finalizan con el símbolo «>». Entre medias de estos dos símbolos irá el nombre de la etiqueta que queremos que el navegador interprete.Todas las etiquetas HTML están compuestas por una etiqueta de apertura, y una etiqueta de cierre. Aunque hay excepciones, como por ejemplo la etiqueta para cargar una imagen que son llamadas etiquetas huérfanas, ya que solo tienen etiqueta de apertura.
+                Las etiquetas de cierre se construyen con una barra «/» justo antes de la propia etiqueta y los símbolos «<» y «>». Resumiendo, si queremos «pintar» un párrafo en la página web, abriremos con la etiqueta de apertura de párrafo &lt;p&gt;», y cerraríamos con la etiqueta de cierre «&lt;/p&gt;»
+                <h2>Tipos de etiquetas HTML</h2>
+                <h2>Elementos de Línea (Inline) y Elementos de Bloque (Block)</h2>
+                <p>A medida que se va estructurando un sitio web introduciendo etiquetas HTML al código, los navegadores de forma predeterminada otorgarán ciertos estilos o comportamientos a estos elemetos HTML sin que el programador los haya definido previamente. Estos estilos predeterminados forman parte de la interpretación que hace un navegador web de una etiqueta HTML en particular.</p>
+                <p>Uno de los pricipales comportamientos que otorga un navegador web a una etiqueta HTML es determinar si dicha etiqueta HTML es un elemento de bloque o es un elemento de línea. <mark class="text">Aunque este comportamiento es uno de los pricipales que determina un navegador web es pasado por alto en algunos casos</mark>, no logrando encontrarse la solución a cierto problemas de maquetación o implementando código CSS inecesario o complejo para resolver el problema.</p>
+                <p> Aunque con CSS es posible definir su una etiqueta HTML será un elemento de línea o un elemento de bloque, para que puedas ir creando una estructura HTML adecuada en tus proyectos o mejorarla, ten siempre en cuenta que los navegadores dependiendo de la etiqueta HTML que uses van a definir de manera predeterminada si es un elemento de línea o de bloque. Conociendo esto quizás puedas ahorrarte algunas líneas de código en tus estilos CSS.</p>
+                <h3>Elementos de Línea</h3>
+                <p>Una etiqueta o elemento de línea es aquel que ocupa el espacio mínimo necesario en horizontal, y permite que otro elemento se coloque a su lado. En general, los elementos en línea pueden contener únicamente los datos y otros elementos en línea; un elemento en línea ocupa sólo el espacio delimitado por las etiquetas que envuelven su contenido y de forma predeterminada, no comienzan con la nueva línea. A continuación encontrarás todas las etiquetas HTML consideradas elementos de línea por los navegadores web.</p>
+                <div id="elementos_en_linea">
+                    <script> elementos_en_linea(); </script>
+                </div>
+                <h3>Elementos de Bloque</h3>
+                <p>Una etiqueta o elemento de bloque, ocupa todo el ancho disponible y no permite que otro elemento se coloque a su lado (aunque aparentemente tenga lugar suficiente). Un elemento en bloque ocupa todo el espacio de su elemento padre (contenedor), creando así un "bloque". En general, los elementos en bloque pueden contener elementos en línea y otros elementos en bloque y de forma predeterminada comienzan en una nueva línea. A continuación encontrarás todas las etiquetas HTML consideradas elementos de bloque por los navegadores web.</p>
+                <div id="elementos_en_bloque">
+                    <script> elementos_en_bloque(); </script>
+                </div>
+                <p class="info">Un elemento de bloque puede contener uno o varios elementos de bloque o elementos de línea, pero un elemento de línea debería solo contener, de ser necesario, otros elementos de línea.</p>
+            </section>
+            <section>
+                <h1>Atributos HTML</h1>
+                <p>Los atributos en HTML son elemento muy utilizado dentro de las etiquetas HTML, un atributo HTML añade una clave a la etiqueta HTML que puede tener o no un valor especificado.</p>
+                <p>La forma de añadir un atributo html a una etiqueta sería &lt;etiqueta_html atributo = "valor"&gt; Contenido &lt;/etiqueta_html&gt;</p>
+    
+                <h2>Atributos personalizados</h2>
+            </section>
+        </article>
+        <div class="assetsweb container-navigation-by-tabs">
+            <ul class="tabs-title">
+                <li><a>HTML Y ALGO MAS</a></li>
+                <li><a>CSS</a></li>
+                <li><a>JavaScript</a></li>
+            </ul>
+            <div class="tabs-pannel">
+                <div>
+                    <pre>
+                        <code class="language-html">
+                            <section class="instructions">
+                                <h2>Preparación:</h2>
+                                <ol>
+                                    <li>En un tazón pequeño, mezcla el agua tibia, la levadura y el azúcar. Deja reposar durante 5-10 minutos hasta que la mezcla esté burbujeante y activa.</li>
+                                    <li>En un tazón grande, combina la harina y la sal.</li>
+                                    <li>Haz un hueco en el centro de la harina y vierte la mezcla de levadura y el aceite de oliva.</li>
+                                    <li>Mezcla los ingredientes hasta formar una masa homogénea.</li>
+                                    <li>Amasa la masa en una superficie enharinada durante unos 5-7 minutos, hasta que esté suave y elástica.</li>
+                                    <li>Coloca la masa en un tazón engrasado, cubre con un paño húmedo y deja reposar en un lugar cálido durante aproximadamente 1 hora, o hasta que la masa haya duplicado su tamaño.</li>
+                                    <li>Una vez que la masa haya subido, divídela en porciones según el tamaño de las pizzas que desees hacer.</li>
+                                    <li>Estira cada porción de masa en una superficie enharinada hasta obtener el grosor deseado para tu pizza.</li>
+                                    <li>Agrega tus ingredientes favoritos, hornea en un horno precalentado a 220°C durante 12-15 minutos o hasta que la masa esté dorada y los ingredientes estén cocidos.</li>
+                                    <li>Sirve caliente y disfruta de tu pizza casera.</li>
+                                </ol>
+                            </section>
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            article section{
+                                content: "<p>soy html</p>"
+                                width: 100%;
+                                min-height: 100vh;
+                                position: relative;
+                            }
+                            
+                            .background-post{
+                                width: 35vw;
+                                top: 0; right: 0;
+                                position: absolute;
+                                border-radius: 0px 0px 0px 20px;
+                                border-left: 10px solid linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div>
+                    <pre>
+                        <code class="language-javascript">
+                            function showDays(date){
+                                let año = date.getFullYear()
+                                let mes = date.getMonth() + 1  ;
+                                let dia = new Date(año, mes, 0).getDate();
+                                let monthDays = new DocumentFragment();
+                                let content = "<p>soy html</p>"
+                    
+                                getDayName[window.navigator.language.substring(0,2)].forEach(day => {
+                                    let li = document.createElement("li");
+                                    li.setAttribute("draggable", true)
+                                    li.appendChild(document.createTextNode(day));
+                                    monthDays.appendChild(li);
+                                });
+                        
+                                for(let num = 0; num < dia; num++){
+                                    let li = document.createElement("li");
+                                    if(num === 0){li.classList.add("firstDay");}
+                                    if(new Date(año, date.getMonth(), num + 1).toISOString().slice(0, 10) === new Date(Date.now()).toISOString().slice(0, 10)){
+                                        li.classList.add("currentDate");
+                                    }
+                                    li.setAttribute("data-date", new Date(año, mes -1, num +1));
+                                    li.appendChild(document.createTextNode(num + 1));
+                                    monthDays.appendChild(li);
+                                }
+                    
+                                monthDaysContainer.replaceChildren(monthDays);
+                                
+                                firstDay(date.getUTCDay());
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Tutorial HTML, documentación realizada por reffacil.com</p>
+        <ul>
+            <li><a href="#signout">Darme de baja</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,43 @@
+@import url('./assetsweb.css');
+:root{
+    --box-shadow: 1px 2px 2px #dedede;
+    --default-background: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    /* display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr)); */
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--default-background);
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilo para dispositivos pequeños como celulares y algunas tablets */
+@media only screen and (max-width: 768px){}
+
+/* Dispositivos de resolución media como tablets y algunas laptops*/
+@media only screen and (min-width: 768px) and (max-width: 1200px){}
+
+/* Dispositivos de alta resolución como laptops, pantallas o PC's de escritorios*/
+@media only screen and (min-width: 1200px) {}

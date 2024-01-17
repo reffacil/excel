@@ -55,6 +55,9 @@
         ],
         "tutorial": [
           "tutorial-reffacil"
+        ],
+        "prompt": [
+          "prompt-reffacil"
         ]
       }
     }

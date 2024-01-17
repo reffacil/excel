@@ -1,0 +1,72 @@
+/*******************************
+ *       ASSETS WEB            *
+ *******************************
+ */
+
+ .assetsweb.container-navigation-by-tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-navigation-by-tabs .tabs-title{ /* UL */
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:start;
+}
+
+.container-navigation-by-tabs .tabs-title li{
+    display: inline-block;
+    padding: 1em 0em;
+}
+
+.container-navigation-by-tabs .tabs-title a{
+    color: var(--text-color-title-tabs);
+    padding: 1em;
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: -1px 1px 2px #999;
+    border-top: 2px solid transparent;
+    transition: border-top .5s;
+}
+
+.tabs-title li a.active{
+    border-top: 2px solid var(--logo-html-color);
+}
+
+.tabs-pannel{
+    background-color: brown;
+}
+
+.tabs-pannel pre{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-pannel code{
+    height: 50vh;
+    font-size: 14px;
+    display: ruby-text;
+}
+
+.tabs-pannel div{
+    display: none;
+    position: relative;
+}
+
+.tabs-pannel div.active{
+    display: block;
+}
+
+.tabs-pannel div button{
+    content: "<i class='fa-solid fa-copy'></i>";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px; right: 5px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
